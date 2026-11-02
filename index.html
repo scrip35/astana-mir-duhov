@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Astana Mir Duhov — бутик селективной парфюмерии в Астане</title>
+  <meta name="description" content="Оригинальная селективная и люксовая парфюмерия в Астане. Распив от 3 мл, полные флаконы, наборы-пробники. Три бутика, рассрочка Kaspi, Halyk, Jusan, доставка по Казахстану.">
+  <meta name="theme-color" content="#0c0a09">
+  <link rel="icon" href="_исходники_taplink/0_логотип.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#top" class="brand" aria-label="Astana Mir Duhov — наверх">
+      <img src="_исходники_taplink/0_логотип.jpg" alt="" class="brand__logo" width="40" height="40">
+      <span class="brand__name">Astana <em>Mir Duhov</em></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#collection">Коллекция</a>
+      <a href="#sets">Наборы</a>
+      <a href="#stars">Ароматы звёзд</a>
+      <a href="#boutiques">Бутики</a>
+    </nav>
+    <button class="btn btn--gold btn--sm" data-order="">Написать</button>
+  </header>
+
+  <!-- 1. Первый экран -->
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__text">
+      <p class="eyebrow">Бутик селективной парфюмерии · Астана</p>
+      <h1 class="hero__title">Мир <em>изысканных</em><br>ароматов</h1>
+      <p class="hero__lead">Только оригинальная люксовая и нишевая парфюмерия. Распив от&nbsp;3&nbsp;мл, полные флаконы и&nbsp;наборы-пробники — в трёх бутиках Астаны и&nbsp;с&nbsp;доставкой по&nbsp;Казахстану.</p>
+      <div class="hero__actions">
+        <a href="#collection" class="btn btn--gold">Смотреть коллекцию</a>
+        <a href="#boutiques" class="btn btn--ghost">Наши бутики</a>
+      </div>
+      <div class="pay hero__pay" aria-label="Способы оплаты">
+        <span class="pay__badge"><img src="assets/brand/kaspi.png" alt="" width="32" height="32"><span><b>Kaspi Рассрочка</b><small>0·0·24 без переплат</small></span></span>
+        <span class="pay__badge"><img src="assets/brand/kaspi.png" alt="" width="32" height="32"><span><b>Kaspi Red</b><small>оплата в приложении Kaspi</small></span></span>
+      </div>
+    </div>
+    <figure class="hero__art">
+      <div class="hero__arch">
+        <div class="hero__slides" id="hero-slides" data-speed="0.05"><!-- script.js: вся коллекция по очереди --></div>
+      </div>
+      <figcaption class="hero__tag" id="hero-tag">
+        <span id="hero-brand"></span>
+        <b id="hero-name"></b>
+        <small id="hero-price"></small>
+      </figcaption>
+      <span class="hero__ring" aria-hidden="true"></span>
+    </figure>
+    <ul class="hero__stats">
+      <li><b>10+</b><span>лет на рынке</span></li>
+      <li><b>100%</b><span>оригинал</span></li>
+      <li><b>3 мл</b><span>минимальный распив</span></li>
+      <li><b>3</b><span>бутика в Астане</span></li>
+    </ul>
+  </section>
+
+  <!-- 2. Бренды -->
+  <div class="marquee" aria-label="Бренды в наших бутиках">
+    <div class="marquee__track" id="marquee"><!-- script.js --></div>
+  </div>
+
+  <!-- 3. О магазине -->
+  <section class="about">
+    <p class="eyebrow">О нас</p>
+    <p class="about__text reveal">Более десяти лет мы собираем для вас <em>лучшие ароматы мира</em> — от легендарных парфюмерных домов до редкой нишевой парфюмерии. Попробуйте аромат в распиве, прежде чем выбрать свой флакон.</p>
+    <ul class="about__points">
+      <li class="reveal"><span>01</span><b>Только оригинал</b><p>Работаем напрямую с проверенными поставщиками. Гарантируем подлинность каждого флакона.</p></li>
+      <li class="reveal"><span>02</span><b>Распив от 3 мл</b><p>Отливанты 3, 6 и 10 мл — чтобы понять, ваш ли это аромат, без покупки целого флакона.</p></li>
+      <li class="reveal"><span>03</span><b>Без переплат</b><p>Рассрочка Kaspi Red, Halyk, Jusan. Доставка по городу и всему Казахстану.</p></li>
+    </ul>
+  </section>
+
+  <!-- 4. Коллекция -->
+  <section class="collection" id="collection">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Коллекция</p>
+        <h2 class="section-title">Избранные <em>ароматы</em></h2>
+      </div>
+      <p class="section-sub">Двенадцать ароматов, которые выбирают чаще всего. Листайте — каждый раскроется по-своему.</p>
+    </div>
+    <div class="story" id="story"><!-- script.js --></div>
+  </section>
+
+  <!-- Счётчик коллекции сбоку -->
+  <nav class="story-nav" id="story-nav" aria-label="Ароматы коллекции">
+    <span class="story-nav__count" id="story-count">01</span>
+    <ol class="story-nav__dots" id="story-dots"></ol>
+    <span class="story-nav__name" id="story-name"></span>
+  </nav>
+
+  <!-- 5. Наборы-пробники -->
+  <section class="sets" id="sets">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Discovery sets</p>
+        <h2 class="section-title">Наборы <em>5 × 2 мл</em></h2>
+      </div>
+      <div class="seg" role="tablist" aria-label="Для кого">
+        <button class="seg__btn" role="tab" aria-selected="true" data-for="w">Для неё</button>
+        <button class="seg__btn" role="tab" aria-selected="false" data-for="m">Для него</button>
+      </div>
+    </div>
+    <p class="sets__note">Пять стойких ароматов по 2 мл и ещё один <b>в подарок</b> — лучший способ найти свой.</p>
+    <div class="sets__grid" id="sets-grid"><!-- script.js --></div>
+  </section>
+
+  <!-- 6. Ароматы звёзд -->
+  <section class="stars" id="stars">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Выбор знаменитостей</p>
+        <h2 class="section-title">Ароматы <em>звёзд</em></h2>
+      </div>
+      <p class="section-sub">Чем пахнут Еркебулан Токтар, Мерей Абилова и Баян Максатқызы.</p>
+    </div>
+    <div class="stars__grid" id="stars-grid"><!-- script.js --></div>
+  </section>
+
+  <!-- Витрина ароматов -->
+  <section class="stage" id="showcase" aria-live="polite">
+    <div class="stage__word" id="stage-word" aria-hidden="true"></div>
+
+    <div class="stage__top">
+      <div class="stage__tabs" id="stage-tabs" role="tablist" aria-label="Звёзды"><!-- script.js --></div>
+    </div>
+
+    <div class="stage__body">
+      <div class="stage__info">
+        <p class="stage__count" id="stage-count"></p>
+        <p class="stage__brand" id="stage-brand"></p>
+        <h2 class="stage__name" id="stage-name"></h2>
+        <p class="stage__desc" id="stage-desc"></p>
+        <ul class="stage__notes" id="stage-notes"></ul>
+      </div>
+
+      <div class="stage__visual" id="stage-visual">
+        <div class="stage__halo" aria-hidden="true"></div>
+        <img class="stage__bottle" id="stage-bottle" alt="">
+        <div class="stage__shadow" aria-hidden="true"></div>
+        <button class="stage__arrow stage__arrow--prev" id="stage-prev" aria-label="Предыдущий аромат">←</button>
+        <button class="stage__arrow stage__arrow--next" id="stage-next" aria-label="Следующий аромат">→</button>
+      </div>
+
+      <div class="stage__buy">
+        <p class="stage__label">Распив</p>
+        <p class="stage__price" id="stage-price"></p>
+        <div class="volumes" id="stage-volumes" role="group" aria-label="Объём"></div>
+        <button class="btn btn--ink" id="stage-order">Заказать в WhatsApp</button>
+        <p class="stage__perk pay-mini"><img src="assets/brand/kaspi.png" alt="Kaspi" width="18" height="18">Kaspi Рассрочка 0·0·24 · Kaspi Red</p>
+      </div>
+    </div>
+
+    <div class="stage__thumbs" id="stage-thumbs" role="tablist" aria-label="Ароматы"><!-- script.js --></div>
+  </section>
+
+  <!-- Набор / совет выбранной звезды -->
+  <section class="bundle" id="bundle"><!-- script.js --></section>
+
+  <!-- 7. Оплата и доставка -->
+  <section class="service">
+    <div class="service__grid">
+      <div class="service__item reveal">
+        <p class="eyebrow">Оплата</p>
+        <h3>Рассрочка <span>0·0·24</span></h3>
+        <p>Kaspi Red и рассрочка, Halyk, Jusan. Без процентов и переплат — оформим прямо в бутике или онлайн.</p>
+        <div class="pay">
+          <span class="pay__badge"><img src="assets/brand/kaspi.png" alt="" width="32" height="32"><span><b>Kaspi Рассрочка</b><small>0·0·24</small></span></span>
+          <span class="pay__badge"><img src="assets/brand/kaspi.png" alt="" width="32" height="32"><span><b>Kaspi Red</b><small>в приложении Kaspi</small></span></span>
+        </div>
+      </div>
+      <div class="service__item reveal">
+        <p class="eyebrow">Доставка</p>
+        <h3>По всему <span>Казахстану</span></h3>
+        <p>Доставим по Астане и в любой город страны. Заказ — на удобную вам сумму.</p>
+      </div>
+      <div class="service__item reveal">
+        <p class="eyebrow">Telegram</p>
+        <h3>Акции <span>и новинки</span></h3>
+        <p>Подписчики первыми узнают о скидках и поступлениях.</p>
+        <a href="https://t.me/+CQLLQRaKMa81ODUy" target="_blank" rel="noopener" class="link-arrow">Подписаться →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Бутики -->
+  <section class="boutiques" id="boutiques">
+    <div class="section-head">
+      <p class="eyebrow">Попробуйте вживую</p>
+      <h2 class="section-title">Наши <em>бутики</em></h2>
+    </div>
+    <div class="boutiques__grid" id="boutiques-grid"><!-- script.js --></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="_исходники_taplink/0_логотип.jpg" alt="Astana Mir Duhov" width="64" height="64">
+      <p class="footer__name">Astana <em>Mir Duhov</em></p>
+      <p>Бутик селективной парфюмерии · Астана</p>
+      <p class="pay-mini footer__pay"><img src="assets/brand/kaspi.png" alt="Kaspi" width="18" height="18">Kaspi Рассрочка 0·0·24 · Kaspi Red</p>
+    </div>
+    <div class="footer__links">
+      <a href="#collection">Коллекция</a>
+      <a href="#sets">Наборы</a>
+      <a href="#stars">Ароматы звёзд</a>
+      <a href="#boutiques">Бутики</a>
+      <a href="https://t.me/+CQLLQRaKMa81ODUy" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://wa.me/message/65YSUO7WEUECO1" target="_blank" rel="noopener">Сотрудничество</a>
+    </div>
+  </footer>
+
+  <button class="fab" data-order="" aria-label="Написать в WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </button>
+
+  <dialog class="qb" id="quick-buy">
+    <form method="dialog" class="qb__inner">
+      <button class="sheet__close" value="close" aria-label="Закрыть">×</button>
+      <img class="qb__img" id="qb-img" alt="">
+      <div class="qb__body">
+        <p class="qb__brand" id="qb-brand"></p>
+        <h3 class="qb__name" id="qb-name"></h3>
+        <p class="qb__notes" id="qb-notes"></p>
+        <p class="qb__label" id="qb-label">Распив</p>
+        <p class="qb__price" id="qb-price"></p>
+        <div class="volumes" id="qb-volumes" role="group" aria-label="Объём"></div>
+        <button class="btn btn--gold qb__order" id="qb-order" type="button">Заказать в WhatsApp</button>
+        <p class="qb__perk pay-mini"><img src="assets/brand/kaspi.png" alt="Kaspi" width="18" height="18">Kaspi Рассрочка 0·0·24 · Kaspi Red</p>
+        <p class="qb__star" id="qb-star"></p>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="sv" id="set-view">
+    <form method="dialog" class="sv__inner">
+      <button class="sheet__close" value="close" aria-label="Закрыть">×</button>
+      <img class="sv__img" id="sv-img" alt="">
+      <div class="sv__bar">
+        <div>
+          <h3 class="sv__title" id="sv-title"></h3>
+          <p class="sv__meta">5 ароматов × 2 мл · <span id="sv-price"></span> · + аромат в подарок</p>
+        </div>
+        <button class="btn btn--gold btn--sm" type="button" id="sv-order" data-order="">Заказать</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="sheet" id="order-sheet">
+    <form method="dialog" class="sheet__inner">
+      <button class="sheet__close" value="close" aria-label="Закрыть">×</button>
+      <p class="eyebrow">Оформление заказа</p>
+      <h3 class="sheet__title">В какой бутик написать?</h3>
+      <p class="sheet__item" id="order-item"></p>
+      <div class="sheet__list" id="order-list"></div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
